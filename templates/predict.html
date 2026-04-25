@@ -1,0 +1,14 @@
+
+
+<div class="container">
+    <h2>Enter Input Values</h2>
+
+    <form method="POST">
+        {% for col in features %}
+            <label>{{ col }}</label>
+            <input name="{{ col }}" required>
+        {% endfor %}
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
