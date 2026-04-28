@@ -22,7 +22,7 @@ def full_preprocess(df, target):
     X = df.drop(columns=[target])
     y = df[target]
 
-    feature_names = list(X.columns)   # ⭐ IMPORTANT
+    feature_names = list(X.columns)   
 
     from sklearn.preprocessing import LabelEncoder, StandardScaler
 
