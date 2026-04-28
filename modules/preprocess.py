@@ -2,34 +2,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-# def full_preprocess(df, target):
-#     df = df.drop_duplicates()
 
-#     # drop useless cols
-#     for col in df.columns:
-#         if df[col].nunique() <= 1:
-#             df.drop(columns=[col], inplace=True)
-
-#     df = df.dropna()
-
-#     X = df.drop(columns=[target])
-#     y = df[target]
-
-#     encoders = {}
-#     for col in X.select_dtypes(include="object"):
-#         le = LabelEncoder()
-#         X[col] = le.fit_transform(X[col])
-#         encoders[col] = le
-
-#     if y.dtype == "object":
-#         y = LabelEncoder().fit_transform(y)
-
-#     scaler = StandardScaler()
-#     X = scaler.fit_transform(X)
-
-#     meta = {"encoders": encoders}
-
-#     return X, y, meta
 
 
 def full_preprocess(df, target):
